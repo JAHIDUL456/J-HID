@@ -23,6 +23,11 @@ const links=[
         title:'Contact',
         url:'/contact',
     },
+    {
+        id:5,
+        title:'Work',
+        url:'/work',
+    }
 ]
 const Nav = () => {
 
@@ -35,7 +40,7 @@ const Nav = () => {
             {links.map((link,i)=>{
                 return (
                     <li key={i} >
-                        <a href={link.url} className={pathname === link.url ? 'active text-green-300 border-b-2' : 'hover:text-green-300'}>{link.title}</a>
+                        <a href={link.url} className={pathname === link.url ? 'active text-green-300 border-b-2 transition-all ease-in-out duration-300' : 'hover:text-green-300 transition-all ease-in-out duration-300'}>{link.title}</a>
                     </li>
                 )
             }

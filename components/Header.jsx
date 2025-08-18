@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Link from 'next/link';
 import { Button } from './ui/button';
@@ -8,7 +9,7 @@ const Header = () => {
     <div className='py-8 xl:py-10 text-white'>
         <div className='mx-auto container flex items-center justify-between'>
             <Link href="/">
-            <h1 className='text-2xl font-bold'>J@HID <span className='text-green-300'>.</span> </h1> 
+            <h1 className='text-2xl lg:text-3xl font-bold'>J@HID <span className='text-green-300'>.</span> </h1> 
             </Link>
             <div className='flex items-center  gap-16 '>
             <Nav />
